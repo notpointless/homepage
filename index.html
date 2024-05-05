@@ -10,10 +10,20 @@
         <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
         <link rel="stylesheet" href="./css/main.css" type="text/css" />
         <meta name="robots" content="noindex" />
+        <script type="text/javascript" src="./js/rest.js"></script>
+        <script>
+            get_github_org_name()
+                .then(orgName => {
+                    document.getElementById("org_name").textContent = orgName;
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        </script>
     </head>
     <body>
         <nav>
-            <div>
+            <div id="org_name">
                 Pointless Group
             </div>
             <div>
