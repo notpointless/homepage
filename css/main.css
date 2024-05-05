@@ -1,3 +1,41 @@
+:root {
+    --bg-color: rgba(250,250,250, 0.5);
+    --bg-secondary-color: rgba(243,243,246, 0.4)
+}
+
+html {
+    background: var(--bg-color);
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 body {
-    background: red;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+body > * {
+    background: inherit;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+main {
+    height: fit-content;
+    width: fit-content;
+    word-break: break-word;
 }
