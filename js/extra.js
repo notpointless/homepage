@@ -1,4 +1,8 @@
 /*************************
+         Variables
+ *************************/
+
+/*************************
       Rotational Text
  *************************/
 function add_rotational_text(desired_text, deg_inc = 24) {
@@ -8,8 +12,10 @@ function add_rotational_text(desired_text, deg_inc = 24) {
     let array = desired_text.split('');
     // where we need to insert the circular span text
     let target = document.getElementById("brand");
-    console.log(target)
     // create span text with appropriate degree
+    if (array.length > 10) {
+        target.style.marginBottom = '0.35em'
+    }
     for (let i = 0; i < array.length; i++) {
         let text = document.createElement('span');
         degree += deg_inc;
@@ -20,3 +26,6 @@ function add_rotational_text(desired_text, deg_inc = 24) {
     }
 }
 
+/*************************
+       Non-function
+ *************************/
