@@ -48,7 +48,7 @@ nav > :nth-child(1)  {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 10px;
+    margin: 0.35em;
 }
 
 nav > :nth-child(1) > * {
