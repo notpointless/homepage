@@ -55,10 +55,7 @@ nav > :nth-child(1) > * {
     pointer-events: none;
     user-select: none;
     -webkit-user-drag: none;
-    -khtml-user-drag: none;
     -moz-user-select: none;
-    -o-user-drag: none;
-    user-drag: none;
 }
 
 nav > :nth-child(2) > :first-child {
