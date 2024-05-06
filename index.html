@@ -4,13 +4,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hello!</title>
+        <!-- Meta -->
         <meta name="author" content="Zeljko Vranjes" />
-        <link rel="stylesheet" href="./css/main.css" type="text/css" />
         <meta name="robots" content="noindex" />
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="./css/main.css" type="text/css" />
+        <!-- Javascript -->
         <script type="text/javascript" src="./js/vars.js"></script>
         <script type="text/javascript" src="./js/extra.js"></script>
         <script type="text/javascript" src="./js/rest.js"></script>
-
         <script>
             // Retrieving organization name
             get_github_org_name()
@@ -33,43 +35,13 @@
     </head>
     <body>
         <nav>
-            <div>
+            <div style="cursor: pointer;" onclick="location.href='https://github.com/orgs/notpointless';">
                 <img src="./logo.svg" alt="Pointless Image Logo" width="130" height="130">
                 <div id="brand" class="rotated-text"></div>
             </div>
             <div>
-                <a href="https://github.com/notpointless">org</a>
-                <a href="#">projects</a>
-                <a href="#">status</a>
-                <a href="#">faq</a>
+                <!-- nav links can go here. -->
             </div>
         </nav>
-        <main>
-            <article>
-                <h1>organization</h1>
-                <p><a class="org_name" href="https://github.com/notpointless"></a> is a group started by me.</p>
-                <br>
-                <p>The purpose of this group is to hopefully create something that isn't pointless.</p>
-            </article>
-            <article>
-                <h1>projects</h1>
-                <h5>netisdead</h5>
-                <p>A sub-organization within <a class="org_name" href="https://github.com/notpointless"></a>.</p>
-            </article>
-            <article>
-                <h1>status</h1>
-                <b style="color: blue;font-size: 0.8rem;">fake atm testing</b>
-                <br>
-                <p>IAM: <span style="color: green;">ONLINE</span></p>
-                <h5>netisdead</h5>
-                <p>Speaker Recognition Server: <span style="color: green;">ONLINE</span></p>
-                <p>Iris Recognition Server: <span style="color: green;">ONLINE</span></p>
-                <p>Face Recognition Server: <span style="color: green;">ONLINE</span></p>
-            </article>
-            <article>
-                <h1>faq</h1>
-                <p>todo</p>
-            </article>
-        </main>
     </body>
 </html>
