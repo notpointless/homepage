@@ -8,18 +8,22 @@
         <link rel="stylesheet" href="./css/main.css" type="text/css" />
         <meta name="robots" content="noindex" />
         <script type="text/javascript" src="./js/vars.js"></script>
-        <script type="text/javascript" src="./js/rest.js"></script>
         <script type="text/javascript" src="./js/extra.js"></script>
+        <script type="text/javascript" src="./js/rest.js"></script>
+
         <script>
             // Retrieving organization name
             get_github_org_name()
                 .then(orgName => {
+                    ORG_NAME = orgName
                     add_rotational_text(orgName, 20)
                     document.getElementById('org_name').textContent = ORG_NAME;
                 })
                 .catch(error => {
+                    ORG_NAME = "Pointless"
                     add_rotational_text(ORG_NAME, 20)
-                    console.error(error);
+                    document.getElementById('org_name').textContent = ORG_NAME;
+                    //console.error(error);
                 });
         </script>
     </head>
@@ -39,19 +43,21 @@
         <main>
             <article>
                 <h1>organization</h1>
-                <p><span id="org_name"></span></p>
+                <p><a id="org_name" href="https://github.com/notpointless"></a> is a group started by me.</p>
+                <br>
+                <p>The purpose of this group is to hopefully create something that isn't pointless.</p>
             </article>
             <article>
                 <h1>projects</h1>
-                projects here.
+                <p>todo</p>
             </article>
             <article>
                 <h1>status</h1>
-                status of service here
+                <p>todo</p>
             </article>
             <article>
                 <h1>faq</h1>
-                faq here.
+                <p>todo</p>
             </article>
         </main>
     </body>
