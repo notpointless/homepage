@@ -9,5 +9,8 @@ function get_github_org_name(org = "notpointless") {
         method: 'GET',
     })
         .then(response => response.json())
-        .then(data => data.name);
+        .then(data => {
+            ORG_NAME = data.name
+            return data.name;
+        });
 }
