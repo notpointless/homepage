@@ -1,1 +1,1 @@
-let ORG_NAME = "Pointless Group"
+let ORG_NAME = "Pointless"
