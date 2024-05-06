@@ -17,12 +17,16 @@
                 .then(orgName => {
                     ORG_NAME = orgName
                     add_rotational_text(orgName, 20)
-                    document.getElementById('org_name').textContent = ORG_NAME;
+                    document.querySelectorAll('.org_name').forEach((e) => {
+                        e.textContent = ORG_NAME
+                    })
                 })
-                .catch(error => {
+                .catch(_ => {
                     ORG_NAME = "Pointless"
                     add_rotational_text(ORG_NAME, 20)
-                    document.getElementById('org_name').textContent = ORG_NAME;
+                    document.querySelectorAll('.org_name').forEach((e) => {
+                        e.textContent = ORG_NAME
+                    })
                     //console.error(error);
                 });
         </script>
@@ -43,13 +47,14 @@
         <main>
             <article>
                 <h1>organization</h1>
-                <p><a id="org_name" href="https://github.com/notpointless"></a> is a group started by me.</p>
+                <p><a class="org_name" href="https://github.com/notpointless"></a> is a group started by me.</p>
                 <br>
                 <p>The purpose of this group is to hopefully create something that isn't pointless.</p>
             </article>
             <article>
                 <h1>projects</h1>
-                <p>todo</p>
+                <h5>netisdead</h5>
+                <p>A sub-organization within <a class="org_name" href="https://github.com/notpointless"></a> </p>
             </article>
             <article>
                 <h1>status</h1>
