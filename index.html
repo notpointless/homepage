@@ -24,7 +24,7 @@
                     })
                 })
                 .catch(_ => {
-                    ORG_NAME = "Pointless"
+                    ORG_NAME = "Pointless AI"
                     add_rotational_text(ORG_NAME, 20)
                     document.querySelectorAll('.org_name').forEach((e) => {
                         e.textContent = ORG_NAME
@@ -37,7 +37,7 @@
         <nav>
             <div style="cursor: pointer;" onclick="location.href='https://github.com/orgs/notpointless';">
                 <img src="./logo.svg" alt="Pointless Image Logo" width="130" height="130">
-                <div id="brand" class="rotated-text">Pointless AI</div>
+                <div id="brand" class="rotated-text"></div>
             </div>
             <div>
                 <!-- nav links can go here. -->
