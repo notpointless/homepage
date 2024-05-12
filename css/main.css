@@ -43,7 +43,6 @@ nav {
     justify-content: center;
     align-items: center;
     height: 100%;
-    font: 19px Monaco, MonoSpace;
 }
 
 nav > :nth-child(1)  {
